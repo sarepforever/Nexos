@@ -1,0 +1,32 @@
+
+<div class="flex-shrink-0">
+<div class="container ">
+<div class="row justify-content-center">
+<form class="example-form col-6" [formGroup]="form" style="margin-top:10em ;">
+  <div class="form-group ">
+    <input type="text" class="form-control form-control-lg"  formControlName="shared" aria-describedby="emailHelp" placeholder="Buscar libros" (keyup)="bookSearch($event)">
+  </div>
+</form>
+<div *ngIf="listBook.length >= 1" class="row justify-content-center" style="margin-top:5em ;">
+<ng-container *ngFor="let item of listBook; let i = index" >
+<div class="card col-3 tarjetas shadow" style="width: 18rem;">
+  <div class="card-body">
+    <h5 class="card-title">{{item['titulo']}}</h5>
+    <h6 class="card-subtitle mb-2 text-muted">Información</h6>
+    <ul>
+      <li> Autor: {{item.tblAutor.nombre}}</li>
+      <li> Genero: {{item.genero}}</li>
+      <li> Editorial: {{item.tblEditorial.nombre}}</li>
+      <li> año: {{item.ano}}</li>
+      <li> Total paginas: {{item.numPag}}</li>
+    </ul>
+  </div>
+</div>
+</ng-container>
+</div>
+</div>
+<div *ngIf="listBook.length < 1" style="text-align: center;">
+<p style="color: grey; margin-top: 1em;">Ningun registro coincide</p>
+</div>
+</div>
+</div>

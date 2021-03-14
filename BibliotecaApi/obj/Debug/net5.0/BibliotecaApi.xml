@@ -1,0 +1,47 @@
+<?xml version="1.0"?>
+<doc>
+    <assembly>
+        <name>BibliotecaApi</name>
+    </assembly>
+    <members>
+        <member name="M:BibliotecaApi.Controllers.AutoresController.GetAutor(System.Int32)">
+            <summary>
+            Lista un Autor Especifico
+            </summary>
+            <param name="id">Id del Autor a Listar</param>
+        </member>
+        <member name="M:BibliotecaApi.Controllers.AutoresController.Post(BibliotecaApi.DTOs.POSTAutorDTO)">
+            <summary>
+            Crear un Autor
+            </summary>
+        </member>
+        <member name="M:BibliotecaApi.Controllers.EditorialesController.GetEditorial(System.Int32)">
+            <summary>
+            Lista una Editorial Especifica
+            </summary>
+            <param name="id">Id de la Editorial a Listar</param>
+        </member>
+        <member name="M:BibliotecaApi.Controllers.EditorialesController.Post(BibliotecaApi.DTOs.POSTEditorialDTO)">
+            <summary>
+            Crear una Editorial
+            </summary>
+        </member>
+        <member name="M:BibliotecaApi.Controllers.LibrosController.GetLibros(System.String)">
+            <summary>
+            Lista un conjunto de Libros Especifico Filtrando por: Titulo,Gegero,Autor,Editorial.
+            </summary>
+            <param name="value">Valor del Parametro por el Cual Filtrar</param>
+        </member>
+        <member name="M:BibliotecaApi.Controllers.LibrosController.GetLibro(System.Int32)">
+            <summary>
+            Lista un Libro Especifico
+            </summary>
+            <param name="id">Id del Libro a Listar</param>
+        </member>
+        <member name="M:BibliotecaApi.Controllers.LibrosController.Post(BibliotecaApi.DTOs.POSTLibroDTO)">
+            <summary>
+            Crear un Libro
+            </summary>
+        </member>
+    </members>
+</doc>
